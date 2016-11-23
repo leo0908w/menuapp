@@ -11,3 +11,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+// http://dean-android.blogspot.tw/2015/01/androidfragmenttabactivitytab.html
