@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:src="@drawable/dish"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="36dp"
+                android:text="菜名"
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_weight="4"
+                android:text="價格"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:text="份數: "/>
+
+            <Button
+                android:id="@+id/addMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/numMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="24dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/subMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/backPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="backPage"
+                android:text="回上頁"
+                />
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ok"
+                android:text="確定"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
