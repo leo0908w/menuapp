@@ -13,8 +13,6 @@ public class Main2Activity extends AppCompatActivity {
     private TextView mealText;
     private TextView priceText;
     private ImageView imageView;
-    private Intent it;
-    private int[] img = {R.drawable.dish0, R.drawable.dish1, R.drawable.dish2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
